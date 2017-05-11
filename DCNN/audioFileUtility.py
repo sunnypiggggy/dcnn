@@ -1,4 +1,5 @@
 import librosa
+import librosa.display
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,7 +39,7 @@ def getAudioPaths():
         filePath=[ name for name in os.listdir(fileRootPath) if os.path.isfile(os.path.join(fileRootPath,name))]
         for xx in range(len(filePath)-1):
             #print(os.path.join(fileRootPath,filePath[xx]))       
-            filePathList.append(os.path.join(fileRootPath,filePath[xx]))
+            filePathList.append((subDirName, os.path.join(fileRootPath,filePath[xx])))
     return filePathList
 
 
