@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>447bde9e-ad68-4a59-b2a6-bd0af76875f0</TargetProject>
+    <FriendlyName>DCNN</FriendlyName>
+  </ProjectTarget>
+</ProfilingTarget>
