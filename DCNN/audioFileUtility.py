@@ -3,6 +3,7 @@ import librosa.display
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import specgram
 
 def LoadAudioFiles(filePath):
    rawSound=[]
@@ -35,4 +36,16 @@ def plotWave(soundName,rawSound):
         librosa.display.waveplot(np.array(f),sr=22050)
         plt.title(n.title())
         i +=1;
+    plt.show()
+
+def plotSpecgram(soundName,rawSound):
+    i=1
+   # hfig=plt.figure(figsize=(25,60),dpi=900)
+    hfig=plt.figure()
+    for n,f in zip(soundName,rawSound):
+        plt.subplot(10,1,i)
+        specgram(np.array(f),Fs=22050)
+        plt.title(n)
+        i+=1
+    #plt.subtitle("Figure 2: Spectrogram",x=0.5, y=0.915,fontsize=18)
     plt.show()

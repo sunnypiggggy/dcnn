@@ -4,4 +4,9 @@
     <TargetProject>447bde9e-ad68-4a59-b2a6-bd0af76875f0</TargetProject>
     <FriendlyName>DCNN</FriendlyName>
   </ProjectTarget>
+  <Reports>
+    <Report>
+      <Filename>C:\Users\sunnypiggy\AppData\Local\Temp\DCNN_20170511.vsp</Filename>
+    </Report>
+  </Reports>
 </ProfilingTarget>
