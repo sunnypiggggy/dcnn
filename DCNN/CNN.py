@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def windows(data, window_size):
     start = 0
     while start < len(data):
-        yield start, start + window_size
+        yield int(start), int(start + window_size)
         start += (window_size / 2)
         
         
